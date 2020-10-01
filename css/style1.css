@@ -1,0 +1,111 @@
+.box
+{
+    display: grid;
+    grid-template-columns: 30% 20% 50%;
+    background-color: #f7f7f7;
+}
+.aboutbox
+{
+    display: grid;
+    grid-template-columns: 50% 20% 30%;
+    background-color: #f7f7f7;
+}
+.box1
+{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #f7f7f7;
+}
+.box .getintouch, .detail,.aboutbox .getintouch
+{
+    padding: 0 2rem;
+}
+.box .getintouch h1,.detail h1,.aboutbox .getintouch h1
+{
+    padding-top: 3rem;
+    font-family: arial;
+    font-size: 1.3rem;
+}
+.box .getintouch h2,.detail h3,.aboutbox .getintouch h2
+{
+    color: #878787;
+    font-size: 1rem;
+    font-weight: normal;
+}
+.box .detail a,.aboutbox .detail a
+{
+    color:#005CBE;
+}
+.box .detail b,.aboutbox .detail b
+{
+    font-weight: 600;
+}
+.box .images,.aboutbox .images
+{
+   position: relative;
+    margin-top: 38%;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],input[type=email], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #ff4a64;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #f82242;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container1 {
+    margin: 1rem 0;
+    border-radius: 5px;
+    /* padding: 20px; */
+  }
+
+  @media only screen and (max-width:520px)
+{
+    .box,.aboutbox
+    {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .box .images,.aboutbox .images
+    {
+       position: relative;
+       padding:30px
+    }
+}
+/*        Viewport less then equal to 520px end    */
+
+
+/*    Viewport less then or equal to 756px             */
+
+@media only screen and (max-width:750px)
+{
+	.box,.aboutbox
+    {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .box .images,.aboutbox .images
+    {
+       position: relative;
+       padding:30px;
+       margin-top: 10px;
+    }
+}
+/*        Viewport less then equal to 756px end    */

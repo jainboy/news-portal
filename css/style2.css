@@ -1,0 +1,119 @@
+body
+    {
+        padding:0px;
+        margin:0px;
+        background-color:#F8F8F8;
+        font-family:sans-serif;
+    }
+.box{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin:5% auto;
+    padding: 50px;
+    background-color:#FFFFFF;
+    width:50%;
+    position: relative;
+    box-shadow:0px 2px 4px rgba(0,0,0,0.6);
+}
+.imagelink{
+    padding: 30px;
+}
+    #heading
+    {
+        font-size:36px;
+        color:#000000;
+        font-weight:600;
+    }
+    input[type="text"],
+    input[type="password"]
+    {
+        display:block;
+        font-family:sans-serif;
+        margin-bottom:20px;
+        color:red;
+        font-size:14px;
+        font-weight:400px;
+        padding:4px;
+        width:220px;
+        height:40px;
+        border:none;
+        outline:none;
+        border-bottom:1px solid #B9B6B6;
+    }
+    #textline
+    {
+        font-family:arial;
+        font-size:14px;
+        color:#000000;
+    }
+    #link
+    {
+        text-decoration:none;
+        font-family:arial;
+        font-size:14px;
+        color:#000000;
+    }
+    #link1
+    {
+        text-decoration:none;
+        font-family:arial;
+        font-size:14px;
+        color:#000000;
+        padding-left:165px;
+    }
+    #btn
+    {
+        font-family:arial;
+        font-size:14px;
+        color:#ffffff;
+        background-color:#ff4a64;
+        padding:15px 35px;
+        border:none;
+        border-radius: 7px;
+    }
+    #btn:hover
+    {
+        background-color:#f82242;
+    }
+    #img
+    {
+        width:300px;
+        height:300px; 
+        margin-bottom:40px;
+    }
+    @media only screen and (max-width:520px)
+    {
+        .box{
+            grid-template-columns: 100%;
+            width:100%;
+            padding: 0px;
+        }
+        .signin{
+            padding:30px;
+        }
+        #link1
+        {
+            padding-left:90px;
+        }
+    }
+    /*        Viewport less then equal to 520px end    */
+    
+    
+    /*    Viewport less then or equal to 756px             */
+    
+    @media only screen and (max-width:750px)
+    {
+        .box{
+            grid-template-columns: 100%;
+            width:100%;
+            padding: 0px;
+        }
+        .signin{
+            padding:30px;
+        }
+        #link1
+        {
+            padding-left:90px;
+        }
+    }
+    /*        Viewport less then equal to 756px end    */

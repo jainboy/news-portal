@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<title>www.FitnessHub.com</title>
+	</head>
+	<style>
+	
+		body{
+			background-color:skyblue;
+		}
+		#textarea{
+			width:700px;
+			font-family:arial,times,arial black;
+			font-size:18px;
+			text-align:center;
+		}
+		#postarea{
+			height:200px; 
+			width:700px;
+			font-family:arial,times,arial black;
+			font-size:18px;
+			text-align:center;
+		}
+		.categriesdesign
+		{
+			padding:0px 10px 0px 10px;
+			font-family:arial,times,arial black;
+			font-size:18px;
+			color:#3b5998;
+
+		}
+		#categries{
+			font-family:arial,times,arial black;
+			font-size:18px;
+			color:#000000;
+		}
+	</style>
+	<center>
+	<body>
+		<form method="post" action="#" enctype="multiple/form-data">
+		<table border="1">
+		<tr>
+				<td colspan="2" id="headertext">
+				</td>
+			</tr>
+			<form action="#" method="post">
+			<tr>
+				<td><input type="text" name="title" placeholder="Title" id="textarea"></td>
+				<td id="categries">categries<br/>
+					</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="description" placeholder="Post" id="postarea"></td>
+				<td class="categriesdesign">
+						<input type="checkbox" name="categries" value="bollywood">BollyWood <br/>
+						<input type="checkbox" name="categries" value="hollywood">HollyWood <br/>
+						<input type="checkbox" name="categries" value="sports">Sports <br/>
+						<input type="checkbox" name="categries" value="social">Social <br/>
+						<input type="checkbox" name="categries" value="technology">Technology<br/>
+						<input type="checkbox" name="categries" value="agriculture">Agriculture <br/>
+						<input type="checkbox" name="categries" value="finance">Finance <br/>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="text" name="author" placeholder="Author" >
+					<input type="date" name="pdate" placeholder="Date" >
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					tag
+					<input type="text" name="lebel" placeholder="label" id="textarea">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">Image
+
+				<input type="file"  alt="Submit" name="img" id="imagearea"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="Save" name="save" id="button">
+				</td>
+			</tr>
+			</form>
+		</table>
+	</body>
+</html>
+
+
+<!-- php start -->
+
+<!-- /*<?php
+if(isset($_POST['save'])){
+  $title=$_POST['title'];
+  $description=$_POST['description'];
+  $categories=$_POST['categories'];
+  $author=$_POST['author'];
+  $post_date=$_POST['pdate'];
+  $tags=$_POST['lebel'];
+  $image=$_POST['image'];
+  $temprary_img=$_POST['temp_img'];
+  
+ 
+include 'db.php';
+
+$q="INSERT INTO faculity (`fname`, `email`, `lname`, `joindate`, `gender`, `time`, `dob`, `address`, `mobile`, `member`) VALUES ('$a','$b','$c','$d','$e','$f','$g','$h','$i','$j')";
+$result=mysqli_query($con,$q);
+
+if($result===true)
+{
+	?>
+  <script>
+ 	 alert("ragistration succesfully");
+</script>
+<?php
+}
+else
+{
+  ?>
+  	<script>
+ 	 alert("ragistration unsuccesfully");
+	</script>
+<?php
+}}
+?>

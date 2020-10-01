@@ -1,0 +1,214 @@
+body{
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+.admin-deshboard
+{
+     display: grid;
+     grid-template-columns:16% 84%;
+}
+/*------------- side bar start--------- */
+
+  /* Fixed sidenav, full height */
+  .sidenav {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 22px;
+  }
+  .sidenav .side-title
+  {
+      font-size:1.1rem !important;
+      /* font-weight:600; */
+  }
+.sidenav .sidebar-image{
+      position:relative;
+      border-top:1px solid #fff;
+      border-bottom:1px solid #fff;
+      padding:1rem 0;
+  }
+.sidenav .sidebar-image .imgsrc
+  {
+      width:6rem;
+      height:6rem;
+      border:1px solid #fff;
+      border-radius:5.7rem;
+      margin:0 3.6rem;
+  }
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 16px 8px 6px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color:#fc1f98;
+  }
+  /* Add an active class to the active dropdown button */
+  .active{
+    background-color: #fc1f98;
+    color: white;
+  }
+  .active:hover{
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  } 
+  /* -----------------sidebar end------------------- */
+  /* --------------Deshboard css---------------------- */
+  .deshboard
+  {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    padding-left: 3rem;
+    padding-top: 3rem;
+    height: 100%;
+  }
+  
+.catcheck
+  {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+ 
+  /* ---------------------post container start------------- */
+form
+{
+  padding-left: 2rem;
+}
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=file],input[type=date]{
+  width: 90%;
+  padding: 15px;
+  margin: 5px 50px 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+select{
+  width: 92%;
+  padding: 15px;
+  margin: 5px 100px 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+textarea{
+  width: 92%;
+  padding-bottom: 20rem;
+  margin: 5px 100px 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+.published
+{
+  position: relative;
+  left: 35%;
+}
+button:hover {
+  opacity:1;
+}
+/* -----------------all table format------------- */
+h2
+{
+  margin-top:6rem;
+  margin-left:5rem;
+  font-size: 3rem;
+  font-family: arial;
+}
+#table_design
+{
+  margin-left:5rem;
+  border:1px solid black;
+}
+#table_design1
+{
+  border:1px solid black;
+}
+th
+{
+  font-family: arial;
+  background: #ddd3d3;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: .6rem 1rem;
+}
+td
+{
+  font-family: arial;
+  background: #fae7e7;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #574b4b;
+  text-align: center;
+  padding: 0 1rem;
+}
+.btn,a
+{
+  background-color: #f44336;
+  color: white;
+  text-decoration: none;
+  padding: 14px 15px;
+  margin: 3px 0px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+ }
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+   /* --------------post container end---------------- */
+
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
